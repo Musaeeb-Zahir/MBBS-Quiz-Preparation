@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MBBS QuizHub - Subjects</title>
+  <link rel="stylesheet" href="../styles/subjects.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <header class="main-header">
+      <h1>All Subjects</h1>
+      <p>Choose a subject to start practicing</p>
+    </header>
+
+    <div class="toolbar">
+      <div class="search-container">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="subjectSearch" placeholder="Search subjects...">
+      </div>
+      <div class="view-toggle">
+        <button class="btn-toggle active"><i class="fa-solid fa-grip"></i></button>
+        <button class="btn-toggle"><i class="fa-solid fa-list"></i></button>
+      </div>
+    </div>
+
+    <div class="subject-grid" id="subjectGrid">
+    </div>
+  </div>
+
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>

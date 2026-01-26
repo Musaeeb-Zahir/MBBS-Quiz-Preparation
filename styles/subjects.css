@@ -1,0 +1,153 @@
+:root {
+  --bg-color: #f8fafc;
+  --text-main: #1e293b;
+  --text-muted: #64748b;
+  --border-color: #e2e8f0;
+  --primary-blue: #2563eb;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  padding: 40px 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main-header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.main-header p {
+  color: var(--text-muted);
+  margin-bottom: 30px;
+}
+
+/* Toolbar & Search */
+.toolbar {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.search-container {
+  position: relative;
+  flex-grow: 1;
+}
+
+.search-container i {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+}
+
+.search-container input {
+  width: 100%;
+  padding: 12px 12px 12px 45px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.view-toggle {
+  display: flex;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background: white;
+  padding: 4px;
+}
+
+.btn-toggle {
+  border: none;
+  background: transparent;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: var(--text-muted);
+}
+
+.btn-toggle.active {
+  background: var(--primary-blue);
+  color: white;
+}
+
+/* Subject Grid */
+.subject-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 24px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+}
+
+.card .desc {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 15px;
+}
+
+.card-stats {
+  display: flex;
+  gap: 15px;
+  font-size: 0.85rem;
+  color: #475569;
+  margin-bottom: 15px;
+}
+
+.card-stats span i {
+  margin-right: 5px;
+  color: var(--text-muted);
+}
+
+.tag {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  background: #f1f5f9;
+  color: var(--text-muted);
+  border: 1px solid var(--border-color);
+}
+
+/* Color Variants */
+.anatomy { background-color: #f0f7ff; border-color: #bae6fd; }
+.physiology { background-color: #f0fdf4; border-color: #bbf7d0; }
+.biochemistry { background-color: #f0f9ff; border-color: #bae6fd; }
+.pathology { background-color: #f5f3ff; border-color: #ddd6fe; }
+.pharmacology { background-color: #faf5ff; border-color: #f3e8ff; }
+.microbiology { background-color: #f0f9ff; border-color: #e0f2fe; }
+.medicine { background-color: #f0f7ff; border-color: #bae6fd; }
+.surgery { background-color: #fff1f2; border-color: #fecdd3; }
+.obgyn { background-color: #fff1f2; border-color: #fce7f3; }
