@@ -1,0 +1,123 @@
+:root {
+    --primary-blue: #1a62ff;
+    --bg-light: #f8faff;
+    --text-dark: #333;
+    --gray-border: #e0e0e0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--bg-light);
+    margin: 0;
+    color: var(--text-dark);
+}
+
+.navbar {
+    padding: 15px 50px;
+    background: white;
+    border-bottom: 1px solid var(--gray-border);
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.logo span {
+    background: var(--primary-blue);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.back-link {
+    text-decoration: none;
+    color: var(--primary-blue);
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.header-section {
+    background-color: #f1f6ff;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+.header-section h1 { margin: 0; font-size: 2rem; }
+.header-section p { color: #666; margin-top: 10px; }
+
+.badge {
+    background: #f0f2f5;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: #555;
+}
+
+hr { border: 0; border-top: 1px solid #eee; margin: 30px 0; }
+
+.label { font-weight: 500; margin-bottom: 10px; font-size: 0.9rem; }
+
+.button-group {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.option {
+    padding: 12px;
+    border: 1px solid var(--gray-border);
+    background: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 0.95rem;
+}
+
+.option.active {
+    border-color: var(--primary-blue);
+    background: #f1f6ff;
+    color: var(--primary-blue);
+    box-shadow: 0 0 0 1px var(--primary-blue);
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 30px 0;
+    font-size: 0.95rem;
+}
+
+.start-btn {
+    width: 100%;
+    padding: 15px;
+    background: var(--primary-blue);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.start-btn:hover { background: #0050e6; }

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBBS QuizHub - Settings</title>
+    <link rel="stylesheet" href="../styles/quizSetting.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo"><span>M</span> MBBS QuizHub</div>
+    </nav>
+
+    <main class="container">
+        <a href="../pages/subjects.html" class="back-link">← Back to subjects</a>
+
+        <div class="card">
+            <div class="header-section">
+                <h1>Anatomy</h1>
+                <p>Human body structure and organization</p>
+            </div>
+
+            <section class="topics">
+                <h3>Available Topics</h3>
+                <span class="badge">Cardiovascular System</span>
+            </section>
+
+            <hr>
+
+            <section class="settings">
+                <h3>Test Settings</h3>
+                
+                <p class="label">Number of Questions</p>
+                <div class="button-group" id="q-count">
+                    <button class="option active">10</button>
+                    <button class="option">20</button>
+                    <button class="option">30</button>
+                    <button class="option">50</button>
+                </div>
+
+                <p class="label">Difficulty Level</p>
+                <div class="button-group" id="diff-level">
+                    <button class="option active">All</button>
+                    <button class="option">Easy</button>
+                    <button class="option">Medium</button>
+                    <button class="option">Hard</button>
+                </div>
+
+                <div class="checkbox-container">
+                    <input type="checkbox" id="timed">
+                    <label for="timed">Timed test (1 minute per question)</label>
+                </div>
+
+                <button class="start-btn">▶ Start Test</button>
+            </section>
+        </div>
+    </main>
+
+    <script src="../scripts/quizSetting.js"></script>
+</body>
+</html>
